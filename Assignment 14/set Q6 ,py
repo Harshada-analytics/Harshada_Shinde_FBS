@@ -1,0 +1,20 @@
+#Q6 Write a Python program to find the two numbers whose product is
+# maximum among all the pairs in a given list of numbers. Use the
+# Python set.
+
+list = [2, 3, 4, 5, 6, 7, 8]
+
+maximum = 0
+
+for i in list:
+    for j in list:
+
+        product = i * j 
+
+        if product > maximum:
+            maximum = product
+            num1 = i
+            num2 = j
+
+print("Numbers:", num1 , num2)
+print("Maximum product:", maximum)
